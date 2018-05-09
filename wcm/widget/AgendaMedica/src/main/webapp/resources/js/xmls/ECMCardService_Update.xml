@@ -1,0 +1,110 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.dm.ecm.technology.totvs.com/">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<ws:updateCardData>
+			<companyId>?</companyId>
+			<username>?</username>
+			<password>?</password>
+			<cardId>?</cardId>
+			<cardData>
+				<!-- Zero or more repetitions: -->
+				<item>
+					<field>tdClass</field>
+					<value name="tdClass"/>
+				</item>
+				<item>
+					<field>colorAgenda</field>
+					<value name="colorAgenda"/>
+				</item>
+				<item>
+					<field>codFormulario</field>
+					<value name="codFormulario"/>
+				</item>
+				<item>
+					<field>matMedico</field>
+					<value name="matMedico"/>
+				</item>
+				<item>
+					<field>consultaCancelada</field>
+					<value name="consultaCancelada"/>
+				</item>
+				<item>
+					<field>consultaRealizada</field>
+					<value name="consultaRealizada"/>
+				</item>
+				<item>
+					<field>atletaFaltou</field>
+					<value name="atletaFaltou"/>
+				</item>
+				<item>
+					<field>logAlteracao</field>
+					<value name="logAlteracao"/>
+				</item>
+				<item>
+					<field>dateInicio</field>
+					<value name="dateInicio"/>
+				</item>
+				<item>
+					<field>haRecorrencia</field>
+					<value name="haRecorrencia"/>
+				</item>
+				<item>
+					<field>numRecorrencia</field>
+					<value name="numRecorrencia"/>
+				</item>
+				<item>
+					<field>tipoRecorrencia</field>
+					<value name="tipoRecorrencia"/>
+				</item>
+				<item>
+					<field>qtdRecorrencia</field>
+					<value name="qtdRecorrencia"/>
+				</item>
+				<item>
+					<field>hourInicio</field>
+					<value name="hourInicio"/>
+				</item>
+				<item>
+					<field>hourFinal</field>
+					<value name="hourFinal"/>
+				</item>
+				<item>
+					<field>tempoConsulta</field>
+					<value name="tempoConsulta"/>
+				</item>
+				<item>
+					<field>nameAtleta</field>
+					<value name="nameAtleta"/>
+				</item>
+				<item>
+					<field>matAtleta</field>
+					<value name="matAtleta"/>
+				</item>
+				<item>
+					<field>modalidadeAtleta</field>
+					<value name="modalidadeAtleta"/>
+				</item>
+				<item>
+					<field>categoriaAtleta</field>
+					<value name="categoriaAtleta"/>
+				</item>
+				<item>
+					<field>descricao</field>
+					<value name="descricao"/>
+				</item>
+				<item>
+					<field>observacoes</field>
+					<value name="observacoes"/>
+				</item>
+				<item>
+					<field>solic</field>
+					<value name="solic"/>
+				</item>
+				<item>
+					<field>typeSolic</field>
+					<value name="typeSolic"/>
+				</item>
+			</cardData>
+		</ws:updateCardData>
+	</soapenv:Body>
+</soapenv:Envelope>

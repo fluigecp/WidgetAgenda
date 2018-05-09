@@ -1,0 +1,241 @@
+/* Coloque aqui seu codigo CSS */
+html, body {
+	height: 100%;
+	min-height: 100%;
+}
+.td-hour{
+	background-color: #939495!important;
+	color: #fff!important;
+	width: 40px !important;
+	height: 100px;
+	vertical-align: middle !important;
+}
+.color-gray{
+	background-color: #939495!important;
+	color: #fff!important;
+	vertical-align: middle !important;
+}
+.rotate-hours{
+	transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	font-size: 18px;
+}
+caption{
+	border-style: solid !important;
+	border-width: 0.5px !important;
+	border-color: #DDDDDD !important;
+	font-size: 20px;
+	background-color: #939495!important;
+	color: #fff!important;
+}
+.dataTables_scrollBody::-webkit-scrollbar,.detalhes::-webkit-scrollbar, .v-scroll::-webkit-scrollbar{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+.dataTables_scrollBody::-webkit-scrollbar-thumb,.detalhes::-webkit-scrollbar-thumb, .v-scroll::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+.agenda .agenda-date { 
+	line-height: 36px;
+	float: left;
+	text-align: right;
+	margin-right: 10px; 
+	font-weight: normal;
+}
+.dayofmonth {
+	font-size: 40px;
+	line-height: 36px;
+	float: left;
+}
+
+.agenda .agenda-date .shortdate {
+	font-size: 0.75em; 
+}
+
+li.dropdown-header{
+	text-transform: capitalize;
+	font-weight: bold; 
+}
+
+.dv-none{
+	display: none;
+}
+
+div.outros, div.atendimento, div.p-contrata, div.att-equipe{
+	display: none;
+}
+.tt-dropdown-menu::after{
+	z-index: 100 !important;
+	position: relative;
+}
+
+div.card-consuta{
+	position: relative;
+	font-size: 12px;
+	margin-bottom: 7px;
+}
+div.card-consuta .descricao{
+	margin: 7px 2px 7px 2px;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+}
+div.descricao{
+	padding: 10px 0 10px 0 !important;
+}
+div.v-scroll{
+	height: 100px;
+	overflow-y: auto;
+}
+i.icon-center {
+	vertical-align:middle !important;
+}
+i.icon-top {
+	vertical-align:top !important;
+}
+i.icon-bottom {
+	vertical-align:bottom !important;
+}
+.border-right, .bootstrap-tagsinput{
+	border-top-right-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+}
+.btn-close{
+	margin-right: 10px;
+	top: 10px; 
+	position: relative; 
+	vertical-align: middle !important;
+	text-align: center;
+	text-decoration: none;
+}
+.detalhes{
+	/* height: 80vmin !important;  */
+	
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+/*TOAST PESQUISA DE CONSULTA*/
+.wrapper {
+	width: 99.3% !important;
+	margin-bottom: 5px;
+
+}
+.dd-main {
+	padding-top: 5px;
+	color: #333;
+	margin: 0;
+	font-size: 17px;
+	font-weight: normal;
+	-webkit-transition: all 300ms linear;
+	-moz-transition: all 300ms linear;
+	-o-transition: all 300ms linear;
+	-ms-transition: all 300ms linear;
+	transition: all 300ms linear;
+}
+.wrapper .dd-header div {
+	position: relative;
+}
+.dd-content {
+	position: relative;
+	margin-left: 10px;
+}
+/*CLASSES DE ACORDO COM OS TIPOS DE ATENDIMENTO*/
+/* Classe de atendimento individual */
+.wrapper .dd-attindividual {
+	margin: 1px 1px 1px 0;
+	padding: 0;
+	height: auto;
+	list-style-type: none;
+	overflow: hidden;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+	background-color: #CFD8DC;
+	border-left: 30px solid #66bb6a;
+}
+.wrapper .dd-attindividual:hover {
+	border-left: 80px solid #66bb6a;
+}
+/* classe do tipo avaliaÃ§Ã£o */
+.wrapper .dd-avaliacao {
+	margin: 1px 1px 1px 0;
+	padding: 0;
+	height: auto;
+	list-style-type: none;
+	overflow: hidden;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+	background-color: #CFD8DC;
+	border-left: 30px solid #26a69a;
+}
+.wrapper .dd-avaliacao:hover {
+	border-left: 80px solid #26a69a;
+}
+/* classe do tipo atendimento de equipe */
+.wrapper .dd-attequipe {
+	margin: 1px 1px 1px 0;
+	padding: 0;
+	height: auto;
+	list-style-type: none;
+	overflow: hidden;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+	background-color: #CFD8DC;
+	border-left: 30px solid #03a9f4;
+}
+.wrapper .dd-attequipe:hover {
+	border-left: 80px solid #03a9f4;
+}
+/* classe do tipo avaliaÃ§Ã£o de pre-contrato */
+.wrapper .dd-precontrato {
+	margin: 1px 1px 1px 0;
+	padding: 0;
+	height: auto;
+	list-style-type: none;
+	overflow: hidden;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+	background-color: #CFD8DC;
+	border-left: 30px solid #ff8a65;
+}
+.wrapper .dd-precontrato:hover {
+	border-left: 80px solid #ff8a65;
+}
+/* classe do tipo outros */
+.wrapper .dd-outros {
+	margin: 1px 1px 1px 0;
+	padding: 0;
+	height: auto;
+	list-style-type: none;
+	overflow: hidden;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+	background-color: #CFD8DC;
+	border-left: 30px solid #a1887f;
+}
+.wrapper .dd-outros:hover {
+	border-left: 80px solid #a1887f;
+
+}
+.scroll-hidden{
+	overflow: hidden !important;
+}

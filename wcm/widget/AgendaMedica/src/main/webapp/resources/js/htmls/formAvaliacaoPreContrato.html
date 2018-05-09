@@ -1,0 +1,115 @@
+<div class="container">
+	
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+			<legend>Avaliação de Pré-Contratação</legend>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-8 col-sm-8 col-md-4 col-lg-4">
+			<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="dateInicio">
+				<div class="form-input">
+					<div class="form-group">
+						<label>Data do agendamento<b>*</b></label>
+						<input name="dateInicio" id="dateInicio" class="form-control fs-no-bg" data-value="" data-required="" data-calendar="data" type="text" placeholder="" value="" data-size="big" mask="00/00/0000" readonly="" autocomplete="off">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="haRecorrencia">
+				<div class="form-input">
+					<div class="form-group" data-switch="">
+						<label>Há recorrência de agendamento?<b>*</b></label>
+						<br>
+						<input type="checkbox" name="haRecorrencia" id="haRecorrencia" data-state="false" data-edit="" data-on-text="Sim" data-off-text="Não">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row dv-none recorrencia-data">
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="tipoRecorrencia">
+				<div class="form-input">
+					<div class="form-group">
+						<label>Tipo de recorrência<b>*</b></label>
+						<select name="tipoRecorrencia" id="tipoRecorrencia" data-edit="" data-value="" data-required="" class="form-control">
+							<option value="" selected="" disabled="">Selecionar ...</option>
+							<option data-value="days" value="Diária">Diária</option>
+							<option data-value="days" value="Semanal">Semanal</option>
+							<!-- <option value="months">Mensal</option> -->
+							<!-- <option value="years">Anual</option> -->
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="qtdRecorrencia">
+				<div class="form-input">
+					<div class="form-group">
+						<label>Quantidade de recorrência<b>*</b></label>
+						<input name="qtdRecorrencia" id="qtdRecorrencia" maxlength="2" class="form-control fs-no-spin" data-edit="" data-value="" data-required="" type="number" placeholder="" value="" min="1" step="1" max="21" autocomplete="off">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-9 col-sm-9 col-md-4 col-lg-4">
+			<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="hourInicio">
+				<div class="form-input">
+					<div class="form-group">
+						<label>Horário ínicio do agendamento<b>*</b></label>
+						<input name="hourInicio" id="hourInicio" class="form-control fs-no-bg" data-value="" data-required="" data-calendar="horas" type="text" placeholder="" value="" data-size="big" mask="00:00" readonly="" autocomplete="off">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="hourFinal">
+				<div class="form-input">
+					<div class="form-group">
+						<label>Horário término do agendamento<b>*</b></label>
+						<input name="hourFinal" id="hourFinal" class="form-control fs-no-bg" data-value="" data-required="" data-calendar="horas" type="text" placeholder="" value="" data-size="big" mask="00:00" readonly="" autocomplete="off">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="tempoConsulta">
+				<div class="form-input">
+					<div class="form-group">
+						<label>Tempo de consulta</label>
+						<input name="tempoConsulta" id="tempoConsulta" class="form-control fs-no-bg fs-no-border fs-no-shadow" data-edit="" data-value="" type="text" placeholder="" value="" data-size="big" readonly="" autocomplete="off">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="nameAtleta">
+				<div class="form-input">
+					<div class="form-group">
+						<label>Nome do atleta<b>*</b></label>
+						<input name="nameAtleta" class="form-control filter-atleta" type="text" data-edit="" data-value="" data-required="" data-upper="" placeholder="" value="" data-size="big" autocomplete="off">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="observacoes">
+				<div class="form-input">
+					<div class="form-group">
+						<label>Observações</label>
+						<textarea name="observacoes" class="form-control" placeholder="" data-value="" rows="4"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

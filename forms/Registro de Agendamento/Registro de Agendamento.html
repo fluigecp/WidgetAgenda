@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>form</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="http://ecp-teste.fluigcloud.com.br/portal/resources/style-guide/css/fluig-style-guide.min.css"
+    />
+    <script src="http://ecp-teste.fluigcloud.com.br/portal/resources/style-guide/js/fluig-style-guide.min.js"></script>
+
+    <link href="http://ecp.fluigcloud.com.br/portal/resources/style-guide/css/fluig-style-guide-filter.min.css" rel="stylesheet"
+        type="text/css" />
+    <link href="http://ecp.fluigcloud.com.br/portal/resources/style-guide/css/fluig-style-guide-ratingstars.min.css" rel="stylesheet"
+        type="text/css" />
+    <script type="text/javascript" src="../vcXMLRPC.js"></script>
+    <script src="http://ecp.fluigcloud.com.br/portal/resources/js/jquery/jquery.js"></script>
+    <script src="http://ecp.fluigcloud.com.br/portal/resources/js/jquery/jquery-ui.min.js"></script>
+    <script src="http://ecp.fluigcloud.com.br/portal/resources/js/mustache/mustache-min.js"></script>
+    <script src="http://ecp-teste.fluigcloud.com.br/portal/resources/style-guide/js/fluig-style-guide.min.js"></script>
+    <!-- CUSTOM -->
+    <script src="http://ecp.fluigcloud.com.br/portal/resources/style-guide/js/fluig-style-guide-filter.min.js"></script>
+    <script src="http://ecp.fluigcloud.com.br/portal/resources/style-guide/js/fluig-style-guide-ratingstars.min.js"></script>
+</head>
+
+<body class="fluig-style-guide">
+    <div class="container-fluid" id="container">
+        <form name="createFormComponents" class="totvs-form grid vertical create-form-components ui-sortable" style="padding-right: 10px; padding-left: 10px;">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <img src="http://ecp.fluigcloud.com.br/portal/resources/images/1/logo_image.png" alt="Logo" id="logo" style="max-height: 50px; max-width: 250px;"
+                    />
+                    <h1 class="title-form-application text-center">Agendamento de Consultas</h1>
+                    <legend></legend>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="solic">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Número da solicitação</label>
+                                        <input name="solic" id="solic" class="form-control" type="text" placeholder="" value="" data-size="big" readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="typeSolic">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Tipo do agendamento</label>
+                                        <input name="typeSolic" id="typeSolic" class="form-control" type="text" placeholder="" value="" data-size="big" readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="especialidade">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Especialidade</label>
+                                        <input name="especialidade" id="especialidade" class="form-control" type="text" placeholder="" value="" data-size="big" readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="typeConsulta">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Tipo de Consulta</label>
+                                        <input name="typeConsulta" id="typeConsulta" class="form-control" type="text" placeholder="" value="" data-size="big" readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="dateCreate">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Data de criação da ficha</label>
+                                        <input name="dateCreate" id="dateCreate" class="form-control" type="text" placeholder="" value="" data-size="big" readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="tokenFicha">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Token da ficha</label>
+                                        <input name="tokenFicha" id="tokenFicha" class="form-control" type="text" placeholder="" value="" data-size="big" readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="tdClass">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Classe de horário da tabela</label>
+                                        <input name="tdClass" id="tdClass" class="form-control" type="text" placeholder="" value="" data-size="big" readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="colorAgenda">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Cor do card na agenda</label>
+                                        <input name="colorAgenda" id="colorAgenda" class="form-control" type="text" placeholder="" value="" data-size="big" readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="codFormulario">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Código do formulário do modal</label>
+                                        <input name="codFormulario" id="codFormulario" class="form-control" type="text" placeholder="" value="" data-size="big" readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="matMedico">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Matrícula do profissional</label>
+                                        <input name="matMedico" id="matMedico" class="form-control" type="text" placeholder="" value="" data-size="big" readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="consultaCancelada">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Consulta cancelada</label>
+                                        <input name="consultaCancelada" id="consultaCancelada" class="form-control" type="text" placeholder="" value="" data-size="big"
+                                            readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="consultaRealizada">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Consulta realizada</label>
+                                        <input name="consultaRealizada" id="consultaRealizada" class="form-control" type="text" placeholder="" value="" data-size="big"
+                                            readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="atletaFaltou">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Atleta faltou</label>
+                                        <input name="atletaFaltou" id="atletaFaltou" class="form-control" type="text" placeholder="" value="" data-size="big" readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="dateInicio">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Data da consulta</label>
+                                        <input name="dateInicio" id="dateInicio" class="form-control" type="text" placeholder="" value="" data-size="big" readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="haRecorrencia">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Agendamento com recorrência</label>
+                                        <input name="haRecorrencia" id="haRecorrencia" class="form-control" type="text" placeholder="" value="" data-size="big" readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="numRecorrencia">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Número da recorrência</label>
+                                        <input name="numRecorrencia" id="numRecorrencia" class="form-control" type="text" placeholder="" value="" data-size="big"
+                                            readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="tipoRecorrencia">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Tipo de recorrência</label>
+                                        <input name="tipoRecorrencia" id="tipoRecorrencia" class="form-control" type="text" placeholder="" value="" data-size="big"
+                                            readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="qtdRecorrencia">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Quantidade de recorrência</label>
+                                        <input name="qtdRecorrencia" id="qtdRecorrencia" class="form-control" type="text" placeholder="" value="" data-size="big"
+                                            readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="hourInicio">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Horário de ínicio</label>
+                                        <input name="hourInicio" id="hourInicio" class="form-control" type="text" placeholder="" value="" data-size="big" readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="hourFinal">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Horário de término</label>
+                                        <input name="hourFinal" id="hourFinal" class="form-control" type="text" placeholder="" value="" data-size="big" readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="tempoConsulta">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Tempo da consulta</label>
+                                        <input name="tempoConsulta" id="tempoConsulta" class="form-control" type="text" placeholder="" value="" data-size="big" readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="nameAtleta">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Nome do atleta</label>
+                                        <input name="nameAtleta" id="nameAtleta" class="form-control" type="text" placeholder="" value="" data-size="big" readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="matAtleta">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Matrícula do atleta</label>
+                                        <input name="matAtleta" id="matAtleta" class="form-control" type="text" placeholder="" value="" data-size="big" readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="modalidadeAtleta">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Modalidade do atleta</label>
+                                        <input name="modalidadeAtleta" id="modalidadeAtleta" class="form-control" type="text" placeholder="" value="" data-size="big"
+                                            readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="categoriaAtleta">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Categoria do atleta</label>
+                                        <input name="categoriaAtleta" id="categoriaAtleta" class="form-control" type="text" placeholder="" value="" data-size="big"
+                                            readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="descricao">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Descrição</label>
+                                        <input name="descricao" id="descricao" class="form-control" type="text" placeholder="" value="" data-size="big" readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="observacoes">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Observações</label>
+                                        <textarea name="observacoes" id="observacoes" class="form-control" rows="4" readonly=""></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="logAlteracao">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Log de alteração</label>
+                                        <textarea name="logAlteracao" id="logAlteracao" class="form-control" rows="4" readonly=""></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<soapenv:Envelope 
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+	xmlns:ws="http://ws.dm.ecm.technology.totvs.com/">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<ws:create>
+			<companyId>?</companyId>
+			<username>?</username>
+			<password>?</password>
+			<card>
+				<!-- Zero or more repetitions: -->
+				<item>
+					<cardData>
+						<field>especialidade</field>
+						<value name="especialidade"/>
+					</cardData>
+					<cardData>
+						<field>dateCreate</field>
+						<value name="dateCreate"/>
+					</cardData>
+					<cardData>
+						<field>typeConsulta</field>
+						<value name="typeConsulta"/>
+					</cardData>
+					<cardData>
+						<field>tokenFicha</field>
+						<value name="tokenFicha"/>
+					</cardData>
+					<cardData>
+						<field>tdClass</field>
+						<value name="tdClass"/>
+					</cardData>
+					<cardData>
+						<field>colorAgenda</field>
+						<value name="colorAgenda"/>
+					</cardData>
+					<cardData>
+						<field>codFormulario</field>
+						<value name="codFormulario"/>
+					</cardData>
+					<cardData>
+						<field>matMedico</field>
+						<value name="matMedico"/>
+					</cardData>
+					<cardData>
+						<field>consultaCancelada</field>
+						<value name="consultaCancelada"/>
+					</cardData>
+					<cardData>
+						<field>consultaRealizada</field>
+						<value name="consultaRealizada"/>
+					</cardData>
+					<cardData>
+						<field>atletaFaltou</field>
+						<value name="atletaFaltou"/>
+					</cardData>
+					<cardData>
+						<field>dateInicio</field>
+						<value name="dateInicio"/>
+					</cardData>
+					<cardData>
+						<field>haRecorrencia</field>
+						<value name="haRecorrencia"/>
+					</cardData>
+					<cardData>
+						<field>numRecorrencia</field>
+						<value name="numRecorrencia"/>
+					</cardData>
+					<cardData>
+						<field>tipoRecorrencia</field>
+						<value name="tipoRecorrencia"/>
+					</cardData>
+					<cardData>
+						<field>qtdRecorrencia</field>
+						<value name="qtdRecorrencia"/>
+					</cardData>
+					<cardData>
+						<field>hourInicio</field>
+						<value name="hourInicio"/>
+					</cardData>
+					<cardData>
+						<field>hourFinal</field>
+						<value name="hourFinal"/>
+					</cardData>
+					<cardData>
+						<field>tempoConsulta</field>
+						<value name="tempoConsulta"/>
+					</cardData>
+					<cardData>
+						<field>nameAtleta</field>
+						<value name="nameAtleta"/>
+					</cardData>
+					<cardData>
+						<field>matAtleta</field>
+						<value name="matAtleta"/>
+					</cardData>
+					<cardData>
+						<field>modalidadeAtleta</field>
+						<value name="modalidadeAtleta"/>
+					</cardData>
+					<cardData>
+						<field>categoriaAtleta</field>
+						<value name="categoriaAtleta"/>
+					</cardData>
+					<cardData>
+						<field>descricao</field>
+						<value name="descricao"/>
+					</cardData>
+					<cardData>
+						<field>observacoes</field>
+						<value name="observacoes"/>
+					</cardData>
+					<cardData>
+						<field>logAlteracao</field>
+						<value name="logAlteracao"/>
+					</cardData>
+					<cardData>
+						<field>solic</field>
+						<value name="solic"/>
+					</cardData>
+					<cardData>
+						<field>typeSolic</field>
+						<value name="typeSolic"/>
+					</cardData>
+					<parentDocumentId>?</parentDocumentId>
+				</item>
+			</card>
+			<docsecurity>
+				<!--Optional:-->
+				<attributionType>3</attributionType>
+				<!--Optional:-->
+				<attributionValue></attributionValue>
+				<companyId>1</companyId>
+				<documentId></documentId>
+				<!--Optional:-->
+				<downloadEnabled>?</downloadEnabled>
+				<!--Zero or more repetitions:-->
+				<foo>?</foo>
+				<!--Optional:-->
+				<permission>true</permission>
+				<!--Optional:-->
+				<securityLevel>3</securityLevel>
+				<!--Optional:-->
+				<securityVersion>true</securityVersion>
+				<sequence>?</sequence>
+				<!--Optional:-->
+				<showContent>true</showContent>
+				<version>1</version>
+			</docsecurity>
+		</ws:create>
+	</soapenv:Body>
+</soapenv:Envelope>
